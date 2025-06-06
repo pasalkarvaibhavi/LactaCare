@@ -2,7 +2,7 @@
 
 ### Project Overview
 
-**LactaCare** is a web-based human milk management system designed to connect human milk **donors**, **hospitals**, and **administrator** on a single platform to support infants in need of breastmilk. It allows donors to register, complete health screenings, book appointments, and track donation history. Hospitals can request milk for newborns and monitor request status, while admins manage appointments, milk requests, and inventory and making the entire milk donation and distribution process **efficient**, **transparent**, and **life-saving** for vulnerable infants.
+**LactaCare** is a web-based human milk management system designed to connect human milk **donors**, **hospitals**, and **administrator** on a single platform to support infants in need of breastmilk and making the entire milk donation and distribution process **efficient**, **transparent**, and **life-saving** for vulnerable infants.
 
 ---
 
