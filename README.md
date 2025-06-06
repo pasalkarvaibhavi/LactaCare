@@ -1,6 +1,6 @@
 ### LactaCare - Human Milk Bank Management System
 
--**LactaCare** is a web-based human milk management system designed to connect human milk **donors**, **hospitals**, and **administrator** on a single platform to support infants in need of breastmilk.
+###**LactaCare** is a web-based human milk management system designed to connect human milk **donors**, **hospitals**, and **administrator** on a single platform to support infants in need of breastmilk.
 ---
 ### Technologies Used
 
