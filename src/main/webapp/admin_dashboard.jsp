@@ -326,7 +326,7 @@
             if (confirm("Are you sure you want to logout?")) {
                 showToast("Logging out...", "success");
                 setTimeout(() => {
-                    window.location.href = "/login.html";
+                    window.location.href = "/LactaCare/login.jsp";
                 }, 1000);
             }
         }

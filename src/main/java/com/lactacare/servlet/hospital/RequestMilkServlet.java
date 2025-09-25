@@ -27,7 +27,7 @@ import jakarta.servlet.http.Part;
 public class RequestMilkServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     
-    private static final String UPLOAD_BASE_DIR = "C:\\Users\\lenovo\\eclipse-workspace\\LactaCare\\src\\main\\webapp\\prescriptions";
+    private static final String UPLOAD_BASE_DIR = "D:\\GITHUB REPOSITORY\\LactaCare\\src\\main\\webapp\\prescriptions";
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {

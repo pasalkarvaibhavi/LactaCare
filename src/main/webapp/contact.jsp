@@ -371,6 +371,26 @@ textarea {
 				and receiving the gift of life.</p>
 		</div>
 	</section>
+	
+	<%
+    String success = request.getParameter("success");
+    String error = (String) request.getAttribute("error");
+    if ("true".equals(success)) {
+%>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        Your message has been sent successfully!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<%
+    } else if (error != null) {
+%>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <%= error %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<%
+    }
+%>
 
 	<main class="container">
 		<div class="contact-container">

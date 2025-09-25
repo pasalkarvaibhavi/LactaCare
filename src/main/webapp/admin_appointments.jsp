@@ -9,7 +9,7 @@ if (userId == null) {
 	response.sendRedirect("login.jsp"); 
 	return;
 }
-System.out.print("User ID" + userId);
+//System.out.print("User ID" + userId);
 
 if ("POST".equals(request.getMethod())) {
 	String action = request.getParameter("action");

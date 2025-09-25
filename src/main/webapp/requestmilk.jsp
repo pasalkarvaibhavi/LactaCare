@@ -234,7 +234,7 @@
                 </a>
             </li>
             <li>
-                <a href="request_history.jsp">
+                <a href="request-history">
                     <i class="fas fa-history"></i>
                     Request History
                 </a>

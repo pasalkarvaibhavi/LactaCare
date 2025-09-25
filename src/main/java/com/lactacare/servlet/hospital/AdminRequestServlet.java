@@ -53,6 +53,6 @@ public class AdminRequestServlet extends HttpServlet {
                 break;
         }
 
-        response.sendRedirect(request.getContextPath() + "/admin_requests.jsp");
+        response.sendRedirect(request.getContextPath() + "/admin_request.jsp");
     }
 }

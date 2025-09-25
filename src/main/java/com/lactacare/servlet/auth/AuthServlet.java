@@ -68,13 +68,13 @@ public class AuthServlet extends HttpServlet {
                 
                 switch(user.getRole().toLowerCase()) {
                     case "donor":
-                        response.sendRedirect(request.getContextPath() + "/donor_dashboard.jsp");
+                        response.sendRedirect(request.getContextPath() + "/donordashboard");
                         break;
                     case "hospital":
-                        response.sendRedirect(request.getContextPath() + "/hospital_dashboard.jsp");
+                        response.sendRedirect(request.getContextPath() + "/dashboard");
                         break;
                     case "admin":
-                        response.sendRedirect(request.getContextPath() + "/admin_dashboard.jsp");
+                        response.sendRedirect(request.getContextPath() + "/Adashboard");
                         break;
                     default:
                         response.sendRedirect(request.getContextPath() + "/login.jsp?error=Invalid+role");

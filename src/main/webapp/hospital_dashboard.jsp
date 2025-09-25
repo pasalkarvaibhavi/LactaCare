@@ -200,7 +200,7 @@
 			<li><a href="requestmilk.jsp"> <i class="fas fa-plus-circle"></i>
 					Request Milk
 			</a></li>
-			<li><a href="request_history.jsp"> <i class="fas fa-history"></i>
+			<li><a href="request-history"> <i class="fas fa-history"></i>
 					Request History
 			</a></li>
 			<li><a href="#" onclick="logout()"> <i

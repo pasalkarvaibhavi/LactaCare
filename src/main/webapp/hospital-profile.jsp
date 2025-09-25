@@ -42,7 +42,7 @@
             <li><a href="dashboard"><i class="fas fa-chart-bar"></i> Dashboard</a></li>
             <li><a href="hospital-profile" class="active"><i class="fas fa-user-circle"></i> Profile</a></li>
             <li><a href="requestmilk.jsp"><i class="fas fa-calendar-check"></i> Request Milk</a></li>
-            <li><a href="request_history.jsp"><i class="fas fa-history"></i> History</a></li>
+            <li><a href="request-history"><i class="fas fa-history"></i> History</a></li>
             <li><a href="#" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
         </ul>
     </nav>

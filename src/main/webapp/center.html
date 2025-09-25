@@ -283,7 +283,7 @@ body {
 			</div>
 		</div>
 		<nav class="nav-menu">
-			<!-- Hamburger Button -->
+			Hamburger Button
 			<div class="hamburger" id="hamburger">
 				<span></span> <span></span> <span></span>
 			</div>
@@ -503,598 +503,597 @@ body {
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	<script>
+    
     const milkBanks = [
-  {
-    "name": "Lokmanya Tilak Municipal General Hospital (Sion Hospital) Milk Bank",
-    "address": "Sion Hospital, Sion, Mumbai, Maharashtra 400022",
-    "lat": 19.0444,
-    "lng": 72.8638,
-    "contact": "+91 22 2407 0101",
-    "timings": "9 AM - 7 PM",
-    "distance": null
-  },
-  {
-    "name": "Wadia Maternity Hospital Milk Bank",
-    "address": "Wadia Maternity Hospital, Mumbai, Maharashtra 400012",
-    "lat": 18.9674,
-    "lng": 72.8235,
-    "contact": "+91 22 2414 6420",
-    "timings": "9 AM - 6 PM",
-    "distance": null
-  },
-  {
-    "name": "J.J. Hospital Milk Bank",
-    "address": "J.J. Hospital, Mumbai, Maharashtra 400008",
-    "lat": 18.9602,
-    "lng": 72.8196,
-    "contact": "+91 22 2373 1351",
-    "timings": "8 AM - 6 PM",
-    "distance": null
-  },
-  {
-    "name": "Deenanath Mangeshkar Hospital & Research Centre Milk Bank",
-    "address": "Deenanath Mangeshkar Hospital, Pune, Maharashtra 411004",
-    "lat": 18.5219,
-    "lng": 73.8594,
-    "contact": "+91 20 6600 2000",
-    "timings": "9 AM - 6 PM",
-    "distance": null
-  },
-  {
-    "name": "KEM Hospital Milk Bank",
-    "address": "King Edward Memorial Hospital, Pune, Maharashtra 411011",
-    "lat": 18.5286,
-    "lng": 73.8478,
-    "contact": "+91 20 2612 2941",
-    "timings": "9 AM - 6 PM",
-    "distance": null
-  },
-  {
-    "name": "Bharati Hospital Milk Bank",
-    "address": "Bharati Hospital, Pune, Maharashtra 411043",
-    "lat": 18.4899,
-    "lng": 73.8212,
-    "contact": "+91 20 2424 4444",
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "BJ Government Medical College & Sassoon General Hospitals Milk Bank",
-    "address": "BJ Government Medical College, Pune, Maharashtra 411001",
-    "lat": 18.5151,
-    "lng": 73.8447,
-    "contact": "+91 20 2612 7123",
-    "timings": "8 AM - 6 PM",
-    "distance": null
-  },
-  {
-    "name": "Dr. D.Y. Patil Medical College Milk Bank",
-    "address": "Dr. D.Y. Patil Medical College, Pimpri, Pune, Maharashtra 411018",
-    "lat": 18.6298,
-    "lng": 73.7997,
-    "contact": "+91 20 2747 6666",
-    "timings": "9 AM - 6 PM",
-    "distance": null
-  },
-  {
-    "name": "Sahyadri Hospitals MomStory Milk Bank",
-    "address": "Sahyadri Hospitals, Pune, Maharashtra 411001",
-    "lat": 18.5290,
-    "lng": 73.8515,
-    "contact": "+91 20 6608 9999",
-    "timings": "9 AM - 6 PM",
-    "distance": null
-  },
-  {
-    "name": "Poona Hospital & Research Centre (PHRC) Milk Bank",
-    "address": "Poona Hospital & Research Centre, Pune, Maharashtra 411001",
-    "lat": 18.5200,
-    "lng": 73.8477,
-    "contact": "+91 20 2636 2787",
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Shalinitai Meghe Hospital & Research Centre Milk Bank",
-    "address": "Shalinitai Meghe Hospital, Nagpur, Maharashtra 440023",
-    "lat": 21.1458,
-    "lng": 79.0669,
-    "contact": "+91 712 224 5252",
-    "timings": "9 AM - 6 PM",
-    "distance": null
-  },
-  {
-    "name": "Nagpur Municipal Corporation Human Milk Bank",
-    "address": "Nagpur Municipal Corporation, Nagpur, Maharashtra 440001",
-    "lat": 21.1458,
-    "lng": 79.0882,
-    "contact": "+91 712 256 0000",
-    "timings": "9 AM - 6 PM",
-    "distance": null
-  },
-  {
-    "name": "Mother Milk Bank, Amravati",
-    "address": "Mother Milk Bank, Amravati, Maharashtra 444601",
-    "lat": 20.9333,
-    "lng": 77.7500,
-    "contact": "+91 721 222 3333",
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Government Medical College & Hospital (GMCH) Milk Bank, Akola",
-    "address": "Government Medical College & Hospital, Akola, Maharashtra 444001",
-    "lat": 20.7050,
-    "lng": 77.0059,
-    "contact": "+91 724 225 1234",
-    "timings": "9 AM - 6 PM",
-    "distance": null
-  },
-  {
-    "name": "Women’s Hospital Milk Bank, Akola",
-    "address": "Women’s Hospital, Akola, Maharashtra 444001",
-    "lat": 20.7098,
-    "lng": 77.0114,
-    "contact": "+91 724 226 5678",
-    "timings": "8 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Nashik District Hospital Milk Bank",
-    "address": "Nashik District Hospital, Nashik, Maharashtra 422001",
-    "lat": 20.0110,
-    "lng": 73.7898,
-    "contact": "+91 253 234 1234",
-    "timings": "9 AM - 6 PM",
-    "distance": null
-  },
-  {
-    "name": "Kolhapur Government Hospital Milk Bank",
-    "address": "Government Hospital, Kolhapur, Maharashtra 416001",
-    "lat": 16.7050,
-    "lng": 74.2433,
-    "contact": "+91 231 265 1234",
-    "timings": "8 AM - 6 PM",
-    "distance": null
-  },
-  {
-    "name": "Solapur District Hospital Milk Bank",
-    "address": "District Hospital, Solapur, Maharashtra 413001",
-    "lat": 17.6599,
-    "lng": 75.9064,
-    "contact": "+91 2162 230 123",
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Aurangabad Government Medical College Milk Bank",
-    "address": "Government Medical College, Aurangabad, Maharashtra 431001",
-    "lat": 19.8762,
-    "lng": 75.3433,
-    "contact": "+91 240 234 5678",
-    "timings": "9 AM - 6 PM",
-    "distance": null
-  },
-  {
-    "name": "AIIMS (All India Institute of Medical Sciences) Milk Bank",
-    "address": "All India Institute of Medical Sciences, Ansari Nagar, New Delhi, Delhi 110029",
-    "lat": 28.5672,
-    "lng": 77.2100,
-    "contact": "+91 11 2658 8500",
-    "timings": "9 AM - 6 PM",
-    "distance": null
-  },
-  {
-    "name": "Safdarjung Hospital Milk Bank",
-    "address": "Safdarjung Hospital, Aurobindo Marg, New Delhi, Delhi 110029",
-    "lat": 28.5647,
-    "lng": 77.1967,
-    "contact": "+91 11 2670 2111",
-    "timings": "9 AM - 6 PM",
-    "distance": null
-  },
-  {
-    "name": "Lady Hardinge Medical College & Associated SSK Hospital Milk Bank",
-    "address": "Lady Hardinge Medical College, New Delhi, Delhi 110001",
-    "lat": 28.6280,
-    "lng": 77.2076,
-    "contact": "+91 11 2337 1770",
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Vardhman Mahavir Medical College & Safdarjung Hospital Milk Bank",
-    "address": "VMMC & Safdarjung Hospital, New Delhi, Delhi 110029",
-    "lat": 28.5651,
-    "lng": 77.1961,
-    "contact": "+91 11 2670 2111",
-    "timings": "9 AM - 6 PM",
-    "distance": null
-  },
-  {
-    "name": "Kalawati Saran Children’s Hospital Milk Bank",
-    "address": "Kalawati Saran Children’s Hospital, New Delhi, Delhi 110001",
-    "lat": 28.6441,
-    "lng": 77.2066,
-    "contact": "+91 11 2323 2306",
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Guru Teg Bahadur Hospital Milk Bank",
-    "address": "Guru Teg Bahadur Hospital, Dilshad Garden, New Delhi, Delhi 110095",
-    "lat": 28.6606,
-    "lng": 77.2939,
-    "contact": "+91 11 2255 7223",
-    "timings": "9 AM - 6 PM",
-    "distance": null
-  },
-  {
-    "name": "Maulana Azad Medical College (MAMC) Milk Bank",
-    "address": "Maulana Azad Medical College, Bahadur Shah Zafar Marg, New Delhi, Delhi 110002",
-    "lat": 28.6395,
-    "lng": 77.2161,
-    "contact": "+91 11 2323 2436",
-    "timings": "9 AM - 6 PM",
-    "distance": null
-  },
-  {
-    "name": "Apollo Hospitals Milk Bank",
-    "address": "Apollo Hospitals, Sarita Vihar, New Delhi, Delhi 110076",
-    "lat": 28.5512,
-    "lng": 77.2813,
-    "contact": "+91 11 2692 5858",
-    "timings": "24 Hours",
-    "distance": null
-  },
-  {
-    "name": "B.J. Medical College & Civil Hospital Milk Bank",
-    "address": "Civil Hospital, Ahmedabad, Gujarat 380016",
-    "lat": 23.0225,
-    "lng": 72.5714,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Sola Civil Hospital Milk Bank",
-    "address": "Sola Civil Hospital, Ahmedabad, Gujarat 380061",
-    "lat": 23.0545,
-    "lng": 72.5600,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Sterling Hospitals Milk Bank",
-    "address": "Sterling Hospitals, Ahmedabad, Gujarat 380054",
-    "lat": 23.0187,
-    "lng": 72.5797,
-    "contact": null,
-    "timings": "24 Hours",
-    "distance": null
-  },
-  {
-    "name": "Apollo Hospitals Milk Bank Ahmedabad",
-    "address": "Apollo Hospitals, Ahmedabad, Gujarat 380059",
-    "lat": 23.0147,
-    "lng": 72.5740,
-    "contact": null,
-    "timings": "24 Hours",
-    "distance": null
-  },
-  {
-    "name": "Government Civil Hospital Milk Bank Surat",
-    "address": "Civil Hospital, Surat, Gujarat 395001",
-    "lat": 21.1967,
-    "lng": 72.8301,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Zydus Hospitals Milk Bank",
-    "address": "Zydus Hospitals, Surat, Gujarat 395006",
-    "lat": 21.1770,
-    "lng": 72.8128,
-    "contact": null,
-    "timings": "24 Hours",
-    "distance": null
-  },
-  {
-    "name": "Medical College Baroda & Sir Sayajirao General Hospital Milk Bank",
-    "address": "Medical College Baroda, Vadodara, Gujarat 390001",
-    "lat": 22.3072,
-    "lng": 73.1812,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "S.S. General Hospital Milk Bank Vadodara",
-    "address": "S.S. General Hospital, Vadodara, Gujarat 390001",
-    "lat": 22.3091,
-    "lng": 73.1814,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Government Medical College Milk Bank Rajkot",
-    "address": "Government Medical College, Rajkot, Gujarat 360001",
-    "lat": 22.3039,
-    "lng": 70.8022,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Bhavnagar Medical College Milk Bank",
-    "address": "Bhavnagar Medical College, Bhavnagar, Gujarat 364001",
-    "lat": 21.7656,
-    "lng": 72.1519,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Surendranagar Civil Hospital Milk Bank",
-    "address": "Civil Hospital, Surendranagar, Gujarat 363001",
-    "lat": 22.7220,
-    "lng": 71.6563,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Stanley Medical College & Hospital Milk Bank",
-    "address": "Government Stanley Medical College, Chennai, Tamil Nadu 600001",
-    "lat": 13.0604,
-    "lng": 80.2707,
-    "contact": null,
-    "timings": "9 AM - 6 PM",
-    "distance": null
-  },
-  {
-    "name": "Institute of Obstetrics and Gynaecology Milk Bank",
-    "address": "Institute of Obstetrics and Gynaecology, Chennai, Tamil Nadu 600008",
-    "lat": 13.0685,
-    "lng": 80.2437,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Sri Ramachandra Medical College & Research Institute Milk Bank",
-    "address": "Sri Ramachandra Institute, Chennai, Tamil Nadu 600116",
-    "lat": 13.0389,
-    "lng": 80.2539,
-    "contact": null,
-    "timings": "24 Hours",
-    "distance": null
-  },
-  {
-    "name": "Apollo Hospitals Milk Bank Chennai",
-    "address": "Apollo Hospitals, Chennai, Tamil Nadu 600006",
-    "lat": 13.0617,
-    "lng": 80.2549,
-    "contact": null,
-    "timings": "24 Hours",
-    "distance": null
-  },
-  {
-    "name": "Kilpauk Medical College Milk Bank",
-    "address": "Kilpauk Medical College, Chennai, Tamil Nadu 600010",
-    "lat": 13.0674,
-    "lng": 80.2324,
-    "contact": null,
-    "timings": "9 AM - 6 PM",
-    "distance": null
-  },
-  {
-    "name": "Madurai Medical College & Government Rajaji Hospital Milk Bank",
-    "address": "Government Rajaji Hospital, Madurai, Tamil Nadu 625020",
-    "lat": 9.9192,
-    "lng": 78.1210,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Government Medical College Milk Bank Thanjavur",
-    "address": "Government Medical College, Thanjavur, Tamil Nadu 613004",
-    "lat": 10.7867,
-    "lng": 79.1390,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Coimbatore Medical College Hospital Milk Bank",
-    "address": "Coimbatore Medical College, Coimbatore, Tamil Nadu 641014",
-    "lat": 11.0043,
-    "lng": 76.9614,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Tirunelveli Medical College Hospital Milk Bank",
-    "address": "Tirunelveli Medical College Hospital, Tirunelveli, Tamil Nadu 627011",
-    "lat": 8.7139,
-    "lng": 77.7555,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "SMS Medical College & Attached Hospitals Milk Bank Jaipur",
-    "address": "SMS Medical College, Jaipur, Rajasthan 302004",
-    "lat": 26.8496,
-    "lng": 75.8085,
-    "contact": null,
-    "timings": "9 AM - 6 PM",
-    "distance": null
-  },
-  {
-    "name": "J.K. Lone Hospital Milk Bank Jaipur",
-    "address": "J.K. Lone Hospital, Jaipur, Rajasthan 302018",
-    "lat": 26.9172,
-    "lng": 75.7940,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Fortis Escorts Hospital Milk Bank Jaipur",
-    "address": "Fortis Escorts Hospital, Jaipur, Rajasthan 302017",
-    "lat": 26.8594,
-    "lng": 75.7882,
-    "contact": null,
-    "timings": "24 Hours",
-    "distance": null
-  },
-  {
-    "name": "Zanana Hospital Milk Bank Jaipur",
-    "address": "Zanana Hospital, Jaipur, Rajasthan 302001",
-    "lat": 26.9197,
-    "lng": 75.8050,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Government Medical College Milk Bank Kota",
-    "address": "Government Medical College, Kota, Rajasthan 324005",
-    "lat": 25.1900,
-    "lng": 75.8355,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "RNT Medical College Milk Bank Udaipur",
-    "address": "RNT Medical College, Udaipur, Rajasthan 313001",
-    "lat": 24.5854,
-    "lng": 73.7125,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Goa Medical College Milk Bank Bambolim",
-    "address": "Goa Medical College, Bambolim, Goa 403202",
-    "lat": 15.4152,
-    "lng": 73.9345,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Apollo Victor Hospital Milk Bank Panaji",
-    "address": "Apollo Victor Hospital, Panaji, Goa 403001",
-    "lat": 15.4929,
-    "lng": 73.8278,
-    "contact": null,
-    "timings": "24 Hours",
-    "distance": null
-  },
-  {
-    "name": "Manipal Hospitals Milk Bank Goa",
-    "address": "Manipal Hospitals, Goa 403001",
-    "lat": 15.4962,
-    "lng": 73.8237,
-    "contact": null,
-    "timings": "24 Hours",
-    "distance": null
-  },
-  {
-    "name": "Rajendra Institute of Medical Sciences (RIMS) Milk Bank Ranchi",
-    "address": "Rajendra Institute of Medical Sciences, Ranchi, Jharkhand 834009",
-    "lat": 23.3510,
-    "lng": 85.3313,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "MGM Medical College Milk Bank Jamshedpur",
-    "address": "MGM Medical College, Jamshedpur, Jharkhand 831001",
-    "lat": 22.8056,
-    "lng": 86.2029,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Andhra Medical College Milk Bank Vishakhapatnam",
-    "address": "Andhra Medical College, Vishakhapatnam, Andhra Pradesh 530002",
-    "lat": 17.6868,
-    "lng": 83.2185,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "King George Hospital Milk Bank Vishakhapatnam",
-    "address": "King George Hospital, Vishakhapatnam, Andhra Pradesh 530002",
-    "lat": 17.6869,
-    "lng": 83.2180,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "Bangalore Medical College & Research Institute Milk Bank",
-    "address": "Bangalore Medical College, Bengaluru, Karnataka 560002",
-    "lat": 12.9799,
-    "lng": 77.5713,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "St. John's Medical College Hospital Milk Bank",
-    "address": "St. John's Medical College, Bengaluru, Karnataka 560034",
-    "lat": 12.9603,
-    "lng": 77.6009,
-    "contact": null,
-    "timings": "9 AM - 6 PM",
-    "distance": null
-  },
-  {
-    "name": "Narayana Health City Milk Bank Bengaluru",
-    "address": "Narayana Health, Bengaluru, Karnataka 560099",
-    "lat": 12.9025,
-    "lng": 77.5834,
-    "contact": null,
-    "timings": "24 Hours",
-    "distance": null
-  },
-  {
-    "name": "Snehbandhan Lactation Management Centre, AMCH",
-    "address": "Assam Medical College and Hospital (AMCH), Dibrugarh, Assam 786002",
-    "lat": 27.4728,
-    "lng": 94.9110,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  },
-  {
-    "name": "SSKM Hospital Milk Bank",
-    "address": "SSKM Hospital, A.J.C. Bose Road, Kolkata, West Bengal 700020",
-    "lat": 22.5354,
-    "lng": 88.3441,
-    "contact": null,
-    "timings": "9 AM - 5 PM",
-    "distance": null
-  }
-];
-
-
+    	  {
+    	    "name": "Lokmanya Tilak Municipal General Hospital (Sion Hospital) Milk Bank",
+    	    "address": "Sion Hospital, Sion, Mumbai, Maharashtra 400022",
+    	    "lat": 19.0444,
+    	    "lng": 72.8638,
+    	    "contact": "+91 22 2407 0101",
+    	    "timings": "9 AM - 7 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Wadia Maternity Hospital Milk Bank",
+    	    "address": "Wadia Maternity Hospital, Mumbai, Maharashtra 400012",
+    	    "lat": 18.9674,
+    	    "lng": 72.8235,
+    	    "contact": "+91 22 2414 6420",
+    	    "timings": "9 AM - 6 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "J.J. Hospital Milk Bank",
+    	    "address": "J.J. Hospital, Mumbai, Maharashtra 400008",
+    	    "lat": 18.9602,
+    	    "lng": 72.8196,
+    	    "contact": "+91 22 2373 1351",
+    	    "timings": "8 AM - 6 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Deenanath Mangeshkar Hospital & Research Centre Milk Bank",
+    	    "address": "Deenanath Mangeshkar Hospital, Pune, Maharashtra 411004",
+    	    "lat": 18.5219,
+    	    "lng": 73.8594,
+    	    "contact": "+91 20 6600 2000",
+    	    "timings": "9 AM - 6 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "KEM Hospital Milk Bank",
+    	    "address": "King Edward Memorial Hospital, Pune, Maharashtra 411011",
+    	    "lat": 18.582892028155516,
+    	    "lng": 73.83287510767572,
+    	    "contact": "+91 20 2612 2941",
+    	    "timings": "9 AM - 6 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Bharati Hospital Milk Bank",
+    	    "address": "Bharati Hospital, Pune, Maharashtra 411043",
+    	    "lat": 18.4899,
+    	    "lng": 73.8212,
+    	    "contact": "+91 20 2424 4444",
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "BJ Government Medical College & Sassoon General Hospitals Milk Bank",
+    	    "address": "BJ Government Medical College, Pune, Maharashtra 411001",
+    	    "lat": 18.5151,
+    	    "lng": 73.8447,
+    	    "contact": "+91 20 2612 7123",
+    	    "timings": "8 AM - 6 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Dr. D.Y. Patil Medical College Milk Bank",
+    	    "address": "Dr. D.Y. Patil Medical College, Pimpri, Pune, Maharashtra 411018",
+    	    "lat": 18.6298,
+    	    "lng": 73.7997,
+    	    "contact": "+91 20 2747 6666",
+    	    "timings": "9 AM - 6 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Sahyadri Hospitals MomStory Milk Bank",
+    	    "address": "Sahyadri Hospitals, Pune, Maharashtra 411001",
+    	    "lat": 18.513402360389296,
+    	    "lng": 73.83940673716782,
+    	    "contact": "+91 20 6608 9999",
+    	    "timings": "9 AM - 6 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Poona Hospital & Research Centre (PHRC) Milk Bank",
+    	    "address": "Poona Hospital & Research Centre, Pune, Maharashtra 411001",
+    	    "lat": 18.5200,
+    	    "lng": 73.8477,
+    	    "contact": "+91 20 2636 2787",
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Shalinitai Meghe Hospital & Research Centre Milk Bank",
+    	    "address": "Shalinitai Meghe Hospital, Nagpur, Maharashtra 440023",
+    	    "lat": 21.1458,
+    	    "lng": 79.0669,
+    	    "contact": "+91 712 224 5252",
+    	    "timings": "9 AM - 6 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Nagpur Municipal Corporation Human Milk Bank",
+    	    "address": "Nagpur Municipal Corporation, Nagpur, Maharashtra 440001",
+    	    "lat": 21.1458,
+    	    "lng": 79.0882,
+    	    "contact": "+91 712 256 0000",
+    	    "timings": "9 AM - 6 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Mother Milk Bank, Amravati",
+    	    "address": "Mother Milk Bank, Amravati, Maharashtra 444601",
+    	    "lat": 20.9333,
+    	    "lng": 77.7500,
+    	    "contact": "+91 721 222 3333",
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Government Medical College & Hospital (GMCH) Milk Bank, Akola",
+    	    "address": "Government Medical College & Hospital, Akola, Maharashtra 444001",
+    	    "lat": 20.7050,
+    	    "lng": 77.0059,
+    	    "contact": "+91 724 225 1234",
+    	    "timings": "9 AM - 6 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Women’s Hospital Milk Bank, Akola",
+    	    "address": "Women’s Hospital, Akola, Maharashtra 444001",
+    	    "lat": 20.7098,
+    	    "lng": 77.0114,
+    	    "contact": "+91 724 226 5678",
+    	    "timings": "8 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Nashik District Hospital Milk Bank",
+    	    "address": "Nashik District Hospital, Nashik, Maharashtra 422001",
+    	    "lat": 20.0110,
+    	    "lng": 73.7898,
+    	    "contact": "+91 253 234 1234",
+    	    "timings": "9 AM - 6 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Kolhapur Government Hospital Milk Bank",
+    	    "address": "Government Hospital, Kolhapur, Maharashtra 416001",
+    	    "lat": 16.7050,
+    	    "lng": 74.2433,
+    	    "contact": "+91 231 265 1234",
+    	    "timings": "8 AM - 6 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Solapur District Hospital Milk Bank",
+    	    "address": "District Hospital, Solapur, Maharashtra 413001",
+    	    "lat": 17.6599,
+    	    "lng": 75.9064,
+    	    "contact": "+91 2162 230 123",
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Aurangabad Government Medical College Milk Bank",
+    	    "address": "Government Medical College, Aurangabad, Maharashtra 431001",
+    	    "lat": 19.8762,
+    	    "lng": 75.3433,
+    	    "contact": "+91 240 234 5678",
+    	    "timings": "9 AM - 6 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "AIIMS (All India Institute of Medical Sciences) Milk Bank",
+    	    "address": "All India Institute of Medical Sciences, Ansari Nagar, New Delhi, Delhi 110029",
+    	    "lat": 28.5672,
+    	    "lng": 77.2100,
+    	    "contact": "+91 11 2658 8500",
+    	    "timings": "9 AM - 6 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Safdarjung Hospital Milk Bank",
+    	    "address": "Safdarjung Hospital, Aurobindo Marg, New Delhi, Delhi 110029",
+    	    "lat": 28.5647,
+    	    "lng": 77.1967,
+    	    "contact": "+91 11 2670 2111",
+    	    "timings": "9 AM - 6 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Lady Hardinge Medical College & Associated SSK Hospital Milk Bank",
+    	    "address": "Lady Hardinge Medical College, New Delhi, Delhi 110001",
+    	    "lat": 28.6280,
+    	    "lng": 77.2076,
+    	    "contact": "+91 11 2337 1770",
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Vardhman Mahavir Medical College & Safdarjung Hospital Milk Bank",
+    	    "address": "VMMC & Safdarjung Hospital, New Delhi, Delhi 110029",
+    	    "lat": 28.5651,
+    	    "lng": 77.1961,
+    	    "contact": "+91 11 2670 2111",
+    	    "timings": "9 AM - 6 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Kalawati Saran Children’s Hospital Milk Bank",
+    	    "address": "Kalawati Saran Children’s Hospital, New Delhi, Delhi 110001",
+    	    "lat": 28.6441,
+    	    "lng": 77.2066,
+    	    "contact": "+91 11 2323 2306",
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Guru Teg Bahadur Hospital Milk Bank",
+    	    "address": "Guru Teg Bahadur Hospital, Dilshad Garden, New Delhi, Delhi 110095",
+    	    "lat": 28.6606,
+    	    "lng": 77.2939,
+    	    "contact": "+91 11 2255 7223",
+    	    "timings": "9 AM - 6 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Maulana Azad Medical College (MAMC) Milk Bank",
+    	    "address": "Maulana Azad Medical College, Bahadur Shah Zafar Marg, New Delhi, Delhi 110002",
+    	    "lat": 28.6395,
+    	    "lng": 77.2161,
+    	    "contact": "+91 11 2323 2436",
+    	    "timings": "9 AM - 6 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Apollo Hospitals Milk Bank",
+    	    "address": "Apollo Hospitals, Sarita Vihar, New Delhi, Delhi 110076",
+    	    "lat": 28.5512,
+    	    "lng": 77.2813,
+    	    "contact": "+91 11 2692 5858",
+    	    "timings": "24 Hours",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "B.J. Medical College & Civil Hospital Milk Bank",
+    	    "address": "Civil Hospital, Ahmedabad, Gujarat 380016",
+    	    "lat": 23.0225,
+    	    "lng": 72.5714,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Sola Civil Hospital Milk Bank",
+    	    "address": "Sola Civil Hospital, Ahmedabad, Gujarat 380061",
+    	    "lat": 23.0545,
+    	    "lng": 72.5600,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Sterling Hospitals Milk Bank",
+    	    "address": "Sterling Hospitals, Ahmedabad, Gujarat 380054",
+    	    "lat": 23.0187,
+    	    "lng": 72.5797,
+    	    "contact": null,
+    	    "timings": "24 Hours",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Apollo Hospitals Milk Bank Ahmedabad",
+    	    "address": "Apollo Hospitals, Ahmedabad, Gujarat 380059",
+    	    "lat": 23.0147,
+    	    "lng": 72.5740,
+    	    "contact": null,
+    	    "timings": "24 Hours",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Government Civil Hospital Milk Bank Surat",
+    	    "address": "Civil Hospital, Surat, Gujarat 395001",
+    	    "lat": 21.1967,
+    	    "lng": 72.8301,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Zydus Hospitals Milk Bank",
+    	    "address": "Zydus Hospitals, Surat, Gujarat 395006",
+    	    "lat": 21.1770,
+    	    "lng": 72.8128,
+    	    "contact": null,
+    	    "timings": "24 Hours",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Medical College Baroda & Sir Sayajirao General Hospital Milk Bank",
+    	    "address": "Medical College Baroda, Vadodara, Gujarat 390001",
+    	    "lat": 22.3072,
+    	    "lng": 73.1812,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "S.S. General Hospital Milk Bank Vadodara",
+    	    "address": "S.S. General Hospital, Vadodara, Gujarat 390001",
+    	    "lat": 22.3091,
+    	    "lng": 73.1814,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Government Medical College Milk Bank Rajkot",
+    	    "address": "Government Medical College, Rajkot, Gujarat 360001",
+    	    "lat": 22.3039,
+    	    "lng": 70.8022,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Bhavnagar Medical College Milk Bank",
+    	    "address": "Bhavnagar Medical College, Bhavnagar, Gujarat 364001",
+    	    "lat": 21.7656,
+    	    "lng": 72.1519,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Surendranagar Civil Hospital Milk Bank",
+    	    "address": "Civil Hospital, Surendranagar, Gujarat 363001",
+    	    "lat": 22.7220,
+    	    "lng": 71.6563,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Stanley Medical College & Hospital Milk Bank",
+    	    "address": "Government Stanley Medical College, Chennai, Tamil Nadu 600001",
+    	    "lat": 13.0604,
+    	    "lng": 80.2707,
+    	    "contact": null,
+    	    "timings": "9 AM - 6 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Institute of Obstetrics and Gynaecology Milk Bank",
+    	    "address": "Institute of Obstetrics and Gynaecology, Chennai, Tamil Nadu 600008",
+    	    "lat": 13.0685,
+    	    "lng": 80.2437,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Sri Ramachandra Medical College & Research Institute Milk Bank",
+    	    "address": "Sri Ramachandra Institute, Chennai, Tamil Nadu 600116",
+    	    "lat": 13.0389,
+    	    "lng": 80.2539,
+    	    "contact": null,
+    	    "timings": "24 Hours",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Apollo Hospitals Milk Bank Chennai",
+    	    "address": "Apollo Hospitals, Chennai, Tamil Nadu 600006",
+    	    "lat": 13.0617,
+    	    "lng": 80.2549,
+    	    "contact": null,
+    	    "timings": "24 Hours",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Kilpauk Medical College Milk Bank",
+    	    "address": "Kilpauk Medical College, Chennai, Tamil Nadu 600010",
+    	    "lat": 13.0674,
+    	    "lng": 80.2324,
+    	    "contact": null,
+    	    "timings": "9 AM - 6 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Madurai Medical College & Government Rajaji Hospital Milk Bank",
+    	    "address": "Government Rajaji Hospital, Madurai, Tamil Nadu 625020",
+    	    "lat": 9.9192,
+    	    "lng": 78.1210,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Government Medical College Milk Bank Thanjavur",
+    	    "address": "Government Medical College, Thanjavur, Tamil Nadu 613004",
+    	    "lat": 10.7867,
+    	    "lng": 79.1390,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Coimbatore Medical College Hospital Milk Bank",
+    	    "address": "Coimbatore Medical College, Coimbatore, Tamil Nadu 641014",
+    	    "lat": 11.0043,
+    	    "lng": 76.9614,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Tirunelveli Medical College Hospital Milk Bank",
+    	    "address": "Tirunelveli Medical College Hospital, Tirunelveli, Tamil Nadu 627011",
+    	    "lat": 8.7139,
+    	    "lng": 77.7555,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "SMS Medical College & Attached Hospitals Milk Bank Jaipur",
+    	    "address": "SMS Medical College, Jaipur, Rajasthan 302004",
+    	    "lat": 26.8496,
+    	    "lng": 75.8085,
+    	    "contact": null,
+    	    "timings": "9 AM - 6 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "J.K. Lone Hospital Milk Bank Jaipur",
+    	    "address": "J.K. Lone Hospital, Jaipur, Rajasthan 302018",
+    	    "lat": 26.9172,
+    	    "lng": 75.7940,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Fortis Escorts Hospital Milk Bank Jaipur",
+    	    "address": "Fortis Escorts Hospital, Jaipur, Rajasthan 302017",
+    	    "lat": 26.8594,
+    	    "lng": 75.7882,
+    	    "contact": null,
+    	    "timings": "24 Hours",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Zanana Hospital Milk Bank Jaipur",
+    	    "address": "Zanana Hospital, Jaipur, Rajasthan 302001",
+    	    "lat": 26.9197,
+    	    "lng": 75.8050,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Government Medical College Milk Bank Kota",
+    	    "address": "Government Medical College, Kota, Rajasthan 324005",
+    	    "lat": 25.1900,
+    	    "lng": 75.8355,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "RNT Medical College Milk Bank Udaipur",
+    	    "address": "RNT Medical College, Udaipur, Rajasthan 313001",
+    	    "lat": 24.5854,
+    	    "lng": 73.7125,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Goa Medical College Milk Bank Bambolim",
+    	    "address": "Goa Medical College, Bambolim, Goa 403202",
+    	    "lat": 15.4152,
+    	    "lng": 73.9345,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Apollo Victor Hospital Milk Bank Panaji",
+    	    "address": "Apollo Victor Hospital, Panaji, Goa 403001",
+    	    "lat": 15.4929,
+    	    "lng": 73.8278,
+    	    "contact": null,
+    	    "timings": "24 Hours",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Manipal Hospitals Milk Bank Goa",
+    	    "address": "Manipal Hospitals, Goa 403001",
+    	    "lat": 15.4962,
+    	    "lng": 73.8237,
+    	    "contact": null,
+    	    "timings": "24 Hours",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Rajendra Institute of Medical Sciences (RIMS) Milk Bank Ranchi",
+    	    "address": "Rajendra Institute of Medical Sciences, Ranchi, Jharkhand 834009",
+    	    "lat": 23.3510,
+    	    "lng": 85.3313,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "MGM Medical College Milk Bank Jamshedpur",
+    	    "address": "MGM Medical College, Jamshedpur, Jharkhand 831001",
+    	    "lat": 22.8056,
+    	    "lng": 86.2029,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Andhra Medical College Milk Bank Vishakhapatnam",
+    	    "address": "Andhra Medical College, Vishakhapatnam, Andhra Pradesh 530002",
+    	    "lat": 17.6868,
+    	    "lng": 83.2185,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "King George Hospital Milk Bank Vishakhapatnam",
+    	    "address": "King George Hospital, Vishakhapatnam, Andhra Pradesh 530002",
+    	    "lat": 17.6869,
+    	    "lng": 83.2180,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Bangalore Medical College & Research Institute Milk Bank",
+    	    "address": "Bangalore Medical College, Bengaluru, Karnataka 560002",
+    	    "lat": 12.9799,
+    	    "lng": 77.5713,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "St. John's Medical College Hospital Milk Bank",
+    	    "address": "St. John's Medical College, Bengaluru, Karnataka 560034",
+    	    "lat": 12.9603,
+    	    "lng": 77.6009,
+    	    "contact": null,
+    	    "timings": "9 AM - 6 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Narayana Health City Milk Bank Bengaluru",
+    	    "address": "Narayana Health, Bengaluru, Karnataka 560099",
+    	    "lat": 12.9025,
+    	    "lng": 77.5834,
+    	    "contact": null,
+    	    "timings": "24 Hours",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "Snehbandhan Lactation Management Centre, AMCH",
+    	    "address": "Assam Medical College and Hospital (AMCH), Dibrugarh, Assam 786002",
+    	    "lat": 27.4728,
+    	    "lng": 94.9110,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  },
+    	  {
+    	    "name": "SSKM Hospital Milk Bank",
+    	    "address": "SSKM Hospital, A.J.C. Bose Road, Kolkata, West Bengal 700020",
+    	    "lat": 22.5354,
+    	    "lng": 88.3441,
+    	    "contact": null,
+    	    "timings": "9 AM - 5 PM",
+    	    "distance": null
+    	  }
+    	];
     let userLocation = null;
 
-    function handleSearch() {
+    /* function handleSearch() {
       const location = document.getElementById('locationInput').value;
       if (!location) return showError('Please enter a location');
       
@@ -1108,6 +1107,24 @@ body {
         showLoading(false);
       }, 1000);
     }
+ */
+ 
+ function handleSearch() {
+	  const location = document.getElementById('locationInput').value.trim();
+	  if (!location) return showError('Please enter a location or milk bank name');
+	  
+	  showLoading(true);
+
+	  setTimeout(() => {
+	    const lowerCaseQuery = location.toLowerCase();
+	    const results = milkBanks.filter(bank =>
+	      bank.name.toLowerCase().includes(lowerCaseQuery) ||
+	      bank.address.toLowerCase().includes(lowerCaseQuery)
+	    );
+	    showResults(results);
+	    showLoading(false);
+	  }, 1000);
+	}
 
     function useLocation() {
       if (!navigator.geolocation) return showError('Geolocation not supported');
@@ -1177,7 +1194,7 @@ body {
                   </div>
                 </div>
                 <div class="action-buttons">
-                  <button class="btn btn-direction" onclick="getDirections(${bank.lat}, ${bank.lng})">
+                  <button class="btn btn-direction" onclick="getDirections('${bank.name}')">
                     <i class="fas fa-directions"></i>
                     <span>Directions</span>
                   </button>
@@ -1194,13 +1211,17 @@ body {
       });
     }
 
-    function getDirections(lat, lng) {
-      if (userLocation) {
-        window.open(`https://www.google.com/maps/dir/?api=1&origin=${userLocation.lat},${userLocation.lng}&destination=${lat},${lng}`);
-      } else {
-        window.open(`https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`);
-      }
-    }
+    function getDirections(name) {
+    	  const destination = encodeURIComponent(name);
+    	  
+    	  if (userLocation) {
+    	    const origin = `${userLocation.lat},${userLocation.lng}`;
+    	    window.open(`https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}`);
+    	  } else {
+    	    window.open(`https://www.google.com/maps/dir/?api=1&destination=${destination}`);
+    	  }
+    	}
+
 
     function showLoading(show) {
       document.getElementById('loadingSpinner').style.display = show ? 'flex' : 'none';
@@ -1236,3 +1257,5 @@ body {
   </script>
 </body>
 </html>
+ 
+ 

@@ -45,18 +45,23 @@ public class ContactServlet extends jakarta.servlet.http.HttpServlet {
             
             int result = pstmt.executeUpdate();
             
-            if(result > 0) {
-                response.sendRedirect(request.getContextPath() + "/index.jsp?success=true");
+            if (result > 0) {
+                // Pass success message to JSP
+                request.setAttribute("successMessage", "Your message has been successfully noted!");
             } else {
-                request.setAttribute("error", "Failed to save contact information");
-                request.getRequestDispatcher("/contact.jsp").forward(request, response);
+                // Pass error message to JSP
+                request.setAttribute("errorMessage", "Failed to save contact information.");
             }
             
+            // Forward back to contact.jsp with message
+            request.getRequestDispatcher("/contact.jsp").forward(request, response);
+            
         } catch (SQLException e) {
-            request.setAttribute("error", "Database error: " + e.getMessage());
+            // Handle database errors
+            request.setAttribute("errorMessage", "Database error: " + e.getMessage());
             request.getRequestDispatcher("/contact.jsp").forward(request, response);
         } finally {
-        	DBUtil.close(conn);
+            DBUtil.close(conn);
         }
     }
 }
